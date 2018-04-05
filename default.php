@@ -55,12 +55,11 @@ HTTP/1.1 200 OK
         </div>
         <div class="container">
             <footer class="footer text-muted">
-                <p>This site's source code is available at <a 
-href="https://github.com/samuelthomas2774/ip-addr.cf">https://github.com/samuelthomas2774/ip-addr.cf</a>.</p>
                 <p><b>Samuel Elliott</b><br />
                     <a class="text-muted" href="mailto:samuel@fancy.org.uk">samuel@fancy.org.uk</a></p>
                 <p><a class="text-muted" href="https://samuelelliott.ml">https://samuelelliott.ml</a><br />
                     <a class="text-muted" href="https://keybase.io/samuelthomas2774">https://keybase.io/samuelthomas2774</a></p>
+                <p>This site's source code is available at <a class="text-muted" href="https://github.com/samuelthomas2774/ip-addr.cf">https://github.com/samuelthomas2774/ip-addr.cf</a>.</p>
             </footer>
         </div>
     </div>
