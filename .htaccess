@@ -1,11 +1,12 @@
 RewriteEngine On
 RewriteBase /
 
-# Set HTTPS environment variable if using CloudFlare's HTTPS
+# Set HTTPS environment variable if using Cloudflare's HTTPS
 RewriteCond %{HTTP_CF_VISITOR} \"scheme\"\s:\s\"https\"
 RewriteRule (.*) $1 [E=HTTPS:on]
 
 RewriteRule ^([^/]+)/json$ json.php?ipaddress=$1
+RewriteRule ^([^/]+)/ip$ ip.php?ipaddress=$1
 
 RewriteCond %{HTTP_HOST} !^ip-addr\.(ml|cf)$
 RewriteRule (.*) https://ip-addr.cf/$1 [R=303]

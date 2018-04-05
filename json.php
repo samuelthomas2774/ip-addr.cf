@@ -27,7 +27,7 @@
                     unset($response->dbip);
                 // $response->cached_since = date('Y-m-d H:i:s', $cache_time);
                 
-                echo json_encode($response, JSON_PRETTY_PRINT);
+                echo json_encode($response, JSON_PRETTY_PRINT) . "\n";
                 exit();
             }
         } catch (Exception $err) {
@@ -59,10 +59,10 @@
             unset($response->dbip);
         // $response->cache_filename = $cache_filename;
         
-        echo json_encode($response, JSON_PRETTY_PRINT);
+        echo json_encode($response, JSON_PRETTY_PRINT) . "\n";
     } catch (Exception $err) {
         header('HTTP/1.1 500 Internal Server Error');
         // echo $err->getMessage();
-        echo json_encode($err, JSON_PRETTY_PRINT);
+        echo json_encode($err, JSON_PRETTY_PRINT) . "\n";
     }
     
