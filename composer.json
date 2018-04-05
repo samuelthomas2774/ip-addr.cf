@@ -1,0 +1,23 @@
+{
+    "require": {
+        "dbip/api-client": "*"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "dbip/api-client",
+                "version": "2018-03-29",
+                "autoload": {
+                    "classmap": [
+                        "dbip-client.class.php"
+                    ]
+                },
+                "dist": {
+                    "url": "https://github.com/dbip/api-client/archive/eb4e4f0f7a91d620d356a140767ade114ca947df.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ]
+}
