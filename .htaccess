@@ -7,6 +7,7 @@ RewriteRule (.*) $1 [E=HTTPS:on]
 
 RewriteRule ^([^/]+)/json$ json.php?ipaddress=$1
 RewriteRule ^([^/]+)/ip$ ip.php?ipaddress=$1
+RewriteRule ^([^/]+)/hostname$ hostname.php?ipaddress=$1
 
 RewriteCond %{HTTP_HOST} !^ip-addr\.(ml|cf)$
 RewriteRule (.*) https://ip-addr.cf/$1 [R=303]
